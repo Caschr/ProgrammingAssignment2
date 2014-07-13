@@ -12,5 +12,5 @@ makeCacheMatrix <- function(x = matrix()) {
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
-        ## Test of this
+        ## Test of this. MOre testing of stuff
 }
