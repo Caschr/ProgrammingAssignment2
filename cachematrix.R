@@ -33,6 +33,6 @@ cacheSolve <- function(x, ...) {
                 }
         Matrix_P <- x$get()                                     ## This retrieves the actual matrix from the passed matrix (in the function call)
         InverseMatrix <- solve(Matrix_P)                        ## This calculates the inverse matrix from the passed matrix
-        x$setInverse(InverseMatrix)                                ## When the inverse has been calculated, we "save" it to the (the list containing four functions)
+        x$setInverse(InverseMatrix)                             ## When the inverse has been calculated, we "save" it to the (the list containing four functions)
         InverseMatrix                                           ## Lastly we print the inverse matrix
 }
