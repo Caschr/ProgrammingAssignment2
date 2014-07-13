@@ -9,8 +9,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
         set <- function(NewMatrix) {
                 x <<- NewMatrix                 ## Sets the new matrix (given from the set function) to be the new matrix
-                InverseMatrix <<- NULL          ## As a new matrix is given, any old inverse matrices must be deleted, by setting the InverseMatrix to NULL
-        }
+                InverseMatrix <<- NULL          ## As a new matrix is given, any old inverse matrices must be deleted, by setting the InverseMatrix to NULL.
+        }                                       ## Here it is important to use <<- since the inverse and the new matrix will be called from outside this environment.
 
         get <- function() x
         setInverse <- function(InverseMatrix_P) InverseMatrix <<- InverseMatrix_P        ## This function allows the cacheSolve to set the InverseMatrix to it has calculated. The "_P" represents the matrix
